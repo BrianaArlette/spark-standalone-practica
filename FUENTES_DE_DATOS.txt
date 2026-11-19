@@ -1,0 +1,16 @@
+﻿FUENTES DE DATOS Y OBSERVACIONES
+
+Los archivos utilizados se obtuvieron del repositorio:
+https://github.com/josepgarcia/datos
+
+1. persons.csv
+
+El archivo contiene 20 registros con nombre, edad, genero y salario. Aunque en el documento se menciona una columna de ciudad, esta no aparece en los datos originales. Se identificaron 10 personas mayores de 30 anos.
+
+2. stocks.txt
+
+El archivo contiene 30 productos con identificador, nombre, categoria, cantidad y precio.
+
+Debido a que estos datos corresponden a un inventario, el analisis se realizo mediante precios por categoria, cantidades disponibles y diferencias porcentuales de precios.
+
+No fue posible calcular el volumen de operaciones por fecha ni la volatilidad historica de acciones, ya que el archivo no contiene fechas ni cotizaciones bursatiles.
