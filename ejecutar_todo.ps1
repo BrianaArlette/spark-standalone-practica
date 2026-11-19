@@ -1,6 +1,4 @@
-# Abre PowerShell en la carpeta descomprimida y ejecuta:
-# powershell -ExecutionPolicy Bypass -File .\ejecutar_todo.ps1
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
 if (-not (Get-Command docker -ErrorAction SilentlyContinue)) {
     Write-Host 'No se encuentra Docker. Abre o instala Docker Desktop.' -ForegroundColor Red
@@ -20,7 +18,7 @@ docker run --rm -v $mount -w /home/jovyan/work quay.io/jupyter/pyspark-notebook 
     bash -lc 'python ejercicios_spark.py && python proyecto_stocks.py' 2>&1 |
     Tee-Object -FilePath 'EVIDENCIAS\ejecucion_completa.txt'
 if ($LASTEXITCODE -ne 0) {
-    Write-Host 'Hubo un error. Comparte EVIDENCIAS\ejecucion_completa.txt.' -ForegroundColor Red
+    Write-Host 'Error de ejecucion. Consultar EVIDENCIAS\ejecucion_completa.txt.' -ForegroundColor Red
     exit 1
 }
 Write-Host 'LISTO. Revisa RESULTADOS y EVIDENCIAS.' -ForegroundColor Green
