@@ -1,0 +1,10 @@
+RESUMEN EJECUTIVO - stocks.txt ORIGINAL DEL REPOSITORIO
+Archivo: inventario de productos; NO contiene movimientos bursatiles.
+Total de registros procesados: 30
+Categorias unicas: 6
+Unidades disponibles en inventario: 879
+Categoria con mayor precio promedio: Electronics ($586.66)
+Categoria con mas unidades: Food (450 unidades)
+Categoria con mayor diferencia de precios: Food (2296.00%)
+NO calculable: dia de mayor volumen bursatil (el archivo no tiene fecha).
+NO calculable: volatilidad historica de acciones (no hay cotizaciones).
